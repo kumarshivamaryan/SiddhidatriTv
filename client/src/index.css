@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-red: #ba0f18;
+  --color-brand-red-hover: #e22630;
+  --color-brand-red-dark: #85070d;
+  --color-brand-gold: #f5b400;
+
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-content: var(--content);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+/* ==========================================================================
+   Permanent Dark Palette Tokens
+   ========================================================================== */
+:root {
+  --surface: #07070b;
+  --surface-soft: #0e0e15;
+  --card: #12121a;
+  --card-hover: #171722;
+  --content: #f8fafc;
+  --muted: #94a3b8;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.16);
+
+  --badge-bg: rgba(245, 180, 0, 0.12);
+  --badge-text: #f5b400;
+  --badge-border: rgba(245, 180, 0, 0.3);
+}
+
+/* Base Body Setup */
+html {
+  font-family: var(--font-sans);
+  background-color: var(--surface);
+  color: var(--content);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-color: var(--surface);
+  color: var(--content);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+/* Brand Headline Gradient */
+.brand-headline-gradient {
+  background: linear-gradient(135deg, #f5b400 0%, #ff6b6b 50%, #ba0f18 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Ambient Subtle Background Mesh */
+.ambient-scene-glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1280px;
+  height: 550px;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 15%, rgba(186, 15, 24, 0.18) 0%, rgba(245, 180, 0, 0.1) 40%, transparent 75%);
+}

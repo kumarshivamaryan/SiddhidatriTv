@@ -8,7 +8,7 @@ const EnquiryModal = ({ isOpen, onClose, preselectedService = '', services = [] 
     email: '',
     phone: '',
     service: preselectedService || (services[0]?.title || 'Live Broadcast / Live Streaming'),
-    budget: 'Standard Commercial (₹50,000 - ₹2,00,000)',
+    budget: 'Standard Commercial',
     message: '',
   });
 
@@ -45,7 +45,7 @@ const EnquiryModal = ({ isOpen, onClose, preselectedService = '', services = [] 
       `*Budget:* ${formData.budget}\n` +
       `*Details:* ${formData.message || 'Looking for details.'}`
     );
-    window.open(`https://wa.me/917999237528?text=${text}`, '_blank');
+    window.open(`https://wa.me/917300038364?text=${text}`, '_blank');
   };
 
   return (
@@ -120,7 +120,7 @@ const EnquiryModal = ({ isOpen, onClose, preselectedService = '', services = [] 
                 <input
                   type="tel"
                   required
-                  placeholder="+91 79992 37528"
+                  placeholder="+91 73000 38364"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-3.5 py-2.5 rounded-xl bg-[var(--surface-soft)] border border-[var(--line)] text-white text-xs sm:text-sm focus:outline-none focus:border-[#ba0f18] transition-colors"
@@ -174,9 +174,9 @@ const EnquiryModal = ({ isOpen, onClose, preselectedService = '', services = [] 
                 onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                 className="w-full px-3 py-2.5 rounded-xl bg-[var(--surface-soft)] border border-[var(--line)] text-white text-xs sm:text-sm focus:outline-none focus:border-[#ba0f18] transition-colors"
               >
-                <option value="Starter Pilot (Under ₹50k)">Starter Pilot (Under ₹50,000)</option>
-                <option value="Standard Commercial (₹50,000 - ₹2,00,000)">Standard Commercial (₹50,000 - ₹2,00,000)</option>
-                <option value="Enterprise Production (₹2,00,000 - ₹10,00,000+)">Enterprise Production (₹2,00,000 - ₹10,00,000+)</option>
+                <option value="Starter Pilot">Starter Pilot</option>
+                <option value="Standard Commercial">Standard Commercial</option>
+                <option value="Enterprise Production">Enterprise Production</option>
                 <option value="Custom Consultation">Custom Retainer / Needs Discussion</option>
               </select>
             </div>

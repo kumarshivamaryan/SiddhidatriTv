@@ -20,7 +20,7 @@ const Contact = ({ services = [] }) => {
     email: '',
     phone: '',
     service: activeServices[0]?.title || 'Live Broadcast / Live Streaming',
-    budget: 'Standard Commercial (₹50,000 - ₹2,00,000)',
+    budget: 'Standard Commercial',
     message: '',
   });
 
@@ -41,7 +41,7 @@ const Contact = ({ services = [] }) => {
         email: '',
         phone: '',
         service: activeServices[0]?.title || 'Live Broadcast / Live Streaming',
-        budget: 'Standard Commercial (₹50,000 - ₹2,00,000)',
+        budget: 'Standard Commercial',
         message: '',
       });
     } catch (err) {
@@ -59,7 +59,7 @@ const Contact = ({ services = [] }) => {
       `*Phone:* ${formData.phone || 'N/A'}\n` +
       `*Details:* Looking to discuss studio or engineering solutions.`
     );
-    window.open(`https://wa.me/917999237528?text=${text}`, '_blank');
+    window.open(`https://wa.me/917300038364?text=${text}`, '_blank');
   };
 
   return (
@@ -88,7 +88,7 @@ const Contact = ({ services = [] }) => {
             
             <div className="space-y-4">
               <a
-                href="tel:+917999237528"
+                href="tel:+917300038364"
                 className="flex items-center gap-3.5 p-3.5 rounded-xl bg-[var(--surface-soft)] hover:bg-[#ba0f18]/10 transition-colors group"
               >
                 <div className="w-10 h-10 rounded-lg bg-[#ba0f18]/20 text-[#ba0f18] flex items-center justify-center shrink-0">
@@ -96,7 +96,7 @@ const Contact = ({ services = [] }) => {
                 </div>
                 <div>
                   <p className="text-[10px] uppercase font-bold text-[var(--muted)]">Direct Phone / Hotline</p>
-                  <p className="text-sm font-semibold text-white group-hover:text-[#f5b400] transition-colors">+91 79992 37528</p>
+                  <p className="text-sm font-semibold text-white group-hover:text-[#f5b400] transition-colors">+91 73000 38364</p>
                 </div>
               </a>
 
@@ -141,7 +141,7 @@ const Contact = ({ services = [] }) => {
               type="button"
               className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/25 font-bold text-xs sm:text-sm transition-all cursor-pointer shadow-sm"
             >
-              <MessageSquare className="w-4 h-4" /> Message on WhatsApp (+91 79992 37528)
+              <MessageSquare className="w-4 h-4" /> Message on WhatsApp (+91 73000 38364)
             </button>
           </div>
 
@@ -204,7 +204,7 @@ const Contact = ({ services = [] }) => {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 79992 37528"
+                      placeholder="+91 73000 38364"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-[var(--surface-soft)] border border-[var(--line)] text-white text-sm focus:outline-none focus:border-[#ba0f18] transition-colors"
@@ -254,9 +254,9 @@ const Contact = ({ services = [] }) => {
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                     className="w-full px-3 py-3 rounded-xl bg-[var(--surface-soft)] border border-[var(--line)] text-white text-sm focus:outline-none focus:border-[#ba0f18] transition-colors"
                   >
-                    <option value="Starter Pilot (Under ₹50k)">Starter Pilot (Under ₹50,000)</option>
-                    <option value="Standard Commercial (₹50,000 - ₹2,00,000)">Standard Commercial (₹50,000 - ₹2,00,000)</option>
-                    <option value="Enterprise Production (₹2,00,000 - ₹10,00,000+)">Enterprise Production (₹2,00,000 - ₹10,00,000+)</option>
+                    <option value="Starter Pilot">Starter Pilot</option>
+                    <option value="Standard Commercial">Standard Commercial</option>
+                    <option value="Enterprise Production">Enterprise Production</option>
                     <option value="Custom Consultation">Custom Retainer / Needs Discussion</option>
                   </select>
                 </div>

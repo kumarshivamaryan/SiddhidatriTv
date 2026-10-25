@@ -364,12 +364,12 @@ const Home = ({ services = [], companyInfo = {}, onOpenQuote }) => {
               Get in Touch Today <ArrowRight className="w-4 h-4" />
             </button>
             <a
-              href="https://wa.me/917999237528?text=Hi%20Siddhidatri%20TV!%20I%20would%20like%20to%20discuss%20a%20project."
+              href="https://wa.me/917300038364?text=Hi%20Siddhidatri%20TV!%20I%20would%20like%20to%20discuss%20a%20project."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30 transition-colors text-sm"
             >
-              Direct WhatsApp (+91 79992 37528)
+              Direct WhatsApp (+91 73000 38364)
             </a>
           </div>
         </div>
